@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-image: url("/assets/images/background-pattern-mobile.svg");
+    margin: 0;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    height: 100vh;
+    font-family: "Work Sans", sans-serif;
+
+   
+}
+
+.background{
+    position:absolute;
+    background-color: hsl(292, 16%, 49%);
+    height: 75vh;
+    width: 100vw;
+}
+
+article{
+    position:relative;
+    background-color: hsl(275, 100%, 97%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    margin: 0px 20px;
+    bottom: 100px;
+}
+.content-container{
+    margin: 0 30px;
+}
+
+header{
+    display: flex;
+    margin: 30px 0 0;
+    gap: 20px;
+}
+h1{
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 0;
+    color: hsl(292, 42%, 14%);
+}
+.star{
+    width: 25px;
+}
+
+.question{
+    display: flex;
+    gap: 20px;
+}
+h2{
+    font-size: 1rem;
+    font-weight: 600;
+    color: hsl(292, 42%, 14%);
+    cursor: pointer;
+}
+.plus, .minus{
+    margin-left: auto;
+    cursor: pointer;
+}
+.minus{
+    display: none;
+}
+.answer{
+    color: hsl(292, 16%, 49%);
+    font-weight: 500;
+    display: none;
+}
+
+hr{
+    color: hsla(293, 16%, 49%, 0.178);
+}
+
+
+@media screen and (min-width:700px) {
+    body{
+        background-image: url("/assets/images/background-pattern-desktop.svg");
+    }
+    article{
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width:1440px) {
+    article{
+        width: 35%;
+        margin: 0 auto;
+    }
+}
